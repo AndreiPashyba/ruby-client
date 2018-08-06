@@ -53,11 +53,12 @@ module StocksExchangeApiClient
                 :Sign => sign,
                 :Key => configuration.api_key
             }).body)
-        OpenStruct.new(response)
+        response =  OpenStruct.new(response)
       end
       if method == :get
-        JSON.parse(HTTParty.get("#{configuration.url}/#{type}").body)
+        response =  JSON.parse(HTTParty.get("#{configuration.url}/#{type}").body)
       end
+      response
     end
 
     def configuration
