@@ -1,5 +1,5 @@
-# Stocks.Exchange (Ruby API client)
-Stocks.Exchange provides all the core exchange functionality, and additional merchant tools available via the HTTP API where all returned messages are in JSON. It's much easier to work with the API by using one of the clients provided by Stocks.Exchange, so while this page describes the API in case you want or need to build your own client, the examples use the Ruby client.
+# STEX (former Stocks.Exchange) (Ruby API client)
+STEX (former Stocks.Exchange) provides all the core exchange functionality, and additional merchant tools available via the HTTP API where all returned messages are in JSON. It's much easier to work with the API by using one of the clients provided by STEX, so while this page describes the API in case you want or need to build your own client, the examples use the Ruby client.
 ## Requirements
 - Ruby >= 2.5.1
 ## Dependent Libraries
@@ -13,10 +13,11 @@ Stocks.Exchange provides all the core exchange functionality, and additional mer
 The base URL for all the requests other than public methods is 
 ```
 https://app.stocks.exchange/api2
+https://app.stex.com/api2
 ```
 
 ## Getting started
--[Documentation](http://help.stocks.exchange/api-integration).
+-[Documentation](http://help.stex.com/api-integration).
 
 To get started with the Ruby API client, here's a snippet for creating a client with existing credentials:
 > In order to use the API functions, you must have an API key and API secret, which is generated in the user profile.
